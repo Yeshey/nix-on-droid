@@ -23,21 +23,21 @@ in
     environment.files = {
       login = mkOption {
         type = types.package;
-        readOnly = true;
+        readOnly = false;
         internal = true;
         description = "Login script.";
       };
 
       loginInner = mkOption {
         type = types.package;
-        readOnly = true;
+        readOnly = false;
         internal = true;
         description = "Login-inner script.";
       };
 
       prootStatic = mkOption {
         type = types.package;
-        readOnly = true;
+        readOnly = false;
         internal = true;
         description = "<literal>proot-static</literal> package.";
       };
